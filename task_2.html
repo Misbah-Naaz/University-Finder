@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Integration</title>
+    <script src="task_2.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        label {
+            padding: 5px 0px;
+        }
+
+        i {
+            padding: 10px 0px 0px 0px;
+            z-index: 1;
+            position: relative;
+            right: 34px;
+        }
+        button
+        {
+            height: 42px;
+        }
+        a
+        {
+            text-align: end;
+         text-decoration: none;
+            color: #f734e8;
+        }
+        img{
+            
+            width: 40px;
+                height: 80px;
+        }
+        #search
+            {
+                padding-left:0px;
+                display: flex;
+            }
+        #labelId
+        {
+            padding: 0px;
+        }    
+        .link
+        {
+            padding-top: 24px;
+        }
+        .uniName
+        {
+            padding-top: 24px;
+        }
+        @media screen and (max-width: 570px) {
+            img
+            {
+                width: 30px;
+                height: 40px;
+            }
+            #labelId
+            {
+                padding-left: 10px;
+                width: 166px;
+            }
+           #search
+           {
+            width: 180px;
+           }
+           a
+        {
+            text-align: center;
+        }
+        .card-row
+        {
+            padding: 5px 25px!important;
+        }
+        .link
+        {
+            padding: 0px!important;
+        }
+        .uniName
+        {
+            padding-top: 8px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="row">
+                <div class="col-4 col-sm-4 col-lg-2" id="labelId">
+                    <label for="countryName" class="form-label">
+                        Enter Country Name:</label>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-8 p-0" id="search">
+                    <input type="text" class="form-control" id="countryName">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="col-2 col-sm-2 col-lg-2 p-0">
+                    <button type="button" class="btn btn-success col-12" onclick="searchUni()">Search</button>
+                </div>
+            </div>
+            <div class="mt-5" id="DisplayUniName">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
