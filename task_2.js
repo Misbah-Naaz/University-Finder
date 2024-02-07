@@ -4,7 +4,7 @@ function searchUni()
     let Api=`http://universities.hipolabs.com/search?country=${countryName}`;
     let uniName=document.getElementById('DisplayUniName');
     let names=[];
-    fetch(Api,{referrerPolicy: "unsafe_url" }).then((response)=>
+    fetch(Api).then((response)=>
     {
         console.log(response);
         return response.json();
