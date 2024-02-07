@@ -1,10 +1,10 @@
 function searchUni()
 {
     let countryName=document.getElementById('countryName').value;
-    let Api=`https://universities.hipolabs.com/search?country=${countryName}`;
+    let Api=`http://universities.hipolabs.com/search?country=${countryName}`;
     let uniName=document.getElementById('DisplayUniName');
     let names=[];
-    fetch(Api).then((response)=>
+    fetch(Api,{referrerPolicy: "unsafe_url" }).then((response)=>
     {
         console.log(response);
         return response.json();
